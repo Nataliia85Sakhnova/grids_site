@@ -1,0 +1,71 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header header header"
+        "aside main main main main";
+    height: 100vh;
+    grid-template-rows: 150px 1fr 1fr 1fr;
+    grid-template-columns: 150px 1fr 1fr 1fr;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 20vw 1fr 10vw 10vw 10vw 10vw 5vw 5vw;
+}
+
+.aside {
+    display: grid;
+    grid-area: aside;
+    grid-template-rows: repeat(8, 5vh);
+}
+
+.main {
+    display: grid;
+    grid-template-areas:
+        "main-content1 main-content1 main-content3 main-content4"
+        "main-content2 main-content2 main-content3 main-content4"
+        "main-content5 main-content6 main-content7 main-content7";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.main-content1,
+.main-content2,
+.main-content3,
+.main-content4,
+.main-content5,
+.main-content6,
+.main-content7 {
+    border-radius: 10%;
+    border: black solid 1px;
+
+}
+
+.main-content1 {
+    background-color: aquamarine;
+}
+
+.main-content2 {
+    background-color: rgb(189, 231, 217);
+}
+
+.main-content3 {
+    background-color: rgb(203, 154, 231);
+}
+
+.main-content4 {
+    background-color: rgb(77, 188, 231);
+}
+
+.main-content5 {
+    background-color: rgb(241, 195, 221);
+}
+
+.main-content6 {
+    background-color: rgb(25, 223, 157);
+}
+
+.main-content7 {
+    background-color: rgb(244, 248, 3);
+}
