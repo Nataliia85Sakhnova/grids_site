@@ -13,6 +13,10 @@
     grid-template-columns: 20vw 1fr 10vw 10vw 10vw 10vw 5vw 5vw;
 }
 
+.header-logo {
+    font: bolder sans-serif;
+}
+
 .aside {
     display: grid;
     grid-area: aside;
@@ -25,8 +29,8 @@
         "main-content1 main-content1 main-content3 main-content4"
         "main-content2 main-content2 main-content3 main-content4"
         "main-content5 main-content6 main-content7 main-content7";
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 25vh);
+    grid-template-columns: repeat(4, 25vw);
 
 }
 
@@ -38,34 +42,40 @@
 .main-content6,
 .main-content7 {
     border-radius: 10%;
-    border: black solid 1px;
-
+    margin: 5px;
 }
 
 .main-content1 {
     background-color: aquamarine;
+    grid-area: main-content1;
 }
 
 .main-content2 {
     background-color: rgb(189, 231, 217);
+    grid-area: main-content2;
 }
 
 .main-content3 {
     background-color: rgb(203, 154, 231);
+    grid-area: main-content3;
 }
 
 .main-content4 {
     background-color: rgb(77, 188, 231);
+    grid-area: main-content4;
 }
 
 .main-content5 {
     background-color: rgb(241, 195, 221);
+    grid-area: main-content5;
 }
 
 .main-content6 {
     background-color: rgb(25, 223, 157);
+    grid-area: main-content6;
 }
 
 .main-content7 {
     background-color: rgb(244, 248, 3);
+    grid-area: main-content7;
 }
