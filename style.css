@@ -10,7 +10,8 @@
 
 .header {
     display: grid;
-    grid-template-columns: 20vw 1fr 10vw 10vw 10vw 10vw 5vw 5vw;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-area: header;
 }
 
 .header-logo {
