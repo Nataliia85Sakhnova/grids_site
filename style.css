@@ -5,23 +5,31 @@
         "aside main main main main";
     height: 100vh;
     grid-template-rows: 150px 1fr 1fr 1fr;
-    grid-template-columns: 150px 1fr 1fr 1fr;
+    grid-template-columns: 400px 1fr 1fr 1fr;
 }
 
 .header {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     grid-area: header;
+    align-items: center;
+    font-family: Arial, Gadget, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: 80px;
 }
 
 .header-logo {
-    font: bolder sans-serif;
+    font-family: Arial, Gadget, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .aside {
     display: grid;
     grid-area: aside;
     grid-template-rows: repeat(8, 5vh);
+    margin-left: 80px;
 }
 
 .main {
@@ -30,9 +38,9 @@
         "main-content1 main-content1 main-content3 main-content4"
         "main-content2 main-content2 main-content3 main-content4"
         "main-content5 main-content6 main-content7 main-content7";
-    grid-template-rows: repeat(4, 25vh);
-    grid-template-columns: repeat(4, 25vw);
-
+    text-align: center;
+    grid-template-rows: repeat(4, 20vh);
+    grid-template-columns: repeat(4, 15vw);
 }
 
 .main-content1,
@@ -44,6 +52,7 @@
 .main-content7 {
     border-radius: 10%;
     margin: 5px;
+    padding-top: 10px;
 }
 
 .main-content1 {
