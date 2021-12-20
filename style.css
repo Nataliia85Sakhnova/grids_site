@@ -117,7 +117,7 @@
     }
 
     .header {
-        display: none;
+        display: grid;
         grid-template-columns: 50%;
         grid-template-rows: 10px;
 
@@ -145,12 +145,12 @@
     .footer {
         background-color: cadetblue;
         display: grid;
-        grid-template-rows: 30px;
         grid-area: footer;
         font-family: Arial, Gadget, sans-serif;
         font-size: 15px;
         font-weight: bolder;
         padding-top: 20px;
+        grid-auto-flow: row;
     }
 }
 
