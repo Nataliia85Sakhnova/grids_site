@@ -12,6 +12,16 @@
 
 .header {
     display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+    grid-area: header;
+    /*  align-items: center; */
+    font-family: Arial, Gadget, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.dd-c {
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     grid-area: header;
     align-items: center;
